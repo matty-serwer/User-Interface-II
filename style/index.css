@@ -1,3 +1,14 @@
+/* 
+COLORS: 
+#65FFC8 Sea Foam
+#3796AD soft blue
+#7A9399 light grey
+#FFA8A5 peaches
+#CC3C74 pink
+*/
+
+
+
 /* meyers reset begins here */
 
 html, body, div, span, applet, object, iframe,
@@ -61,11 +72,12 @@ html {
 
 body {
     font-size: 2rem;
+    background-color: #000000;
 }
 
 body a{
     text-decoration: none;
-    color: blue;
+    color:#65FFC8;
 }
 
 section {
@@ -80,8 +92,8 @@ h2 {
 /* HEADER begins here */
 
 header {
-    background:lightgray;
-    margin-bottom: 5%;
+    background: #000000;
+    margin: 2% 0;
 }
 
 header .navbar {
@@ -93,6 +105,7 @@ header .navbar {
 
 header .logo {
     font-size: 3.5rem;
+    color: #65FFC8;
 }
 
 .nav {
@@ -104,15 +117,25 @@ header .logo {
 }
 
 .nav a {
-    border: 1px solid blue;
+    border: 1px solid #65FFC8;
     border-left: 0;
     flex-grow: 1;
     text-align: center;
     padding: 2%;
 }
 
+.nav a:hover {
+    background-color: #CC3C74;
+    border: 1px solid #CC3C74;
+    /* border-left: 0; */
+}
+
 .nav a:first-child {
-    border-left: 1px solid blue;
+    border-left: 1px solid #65FFC8;
+}
+
+.nav a:first-child:hover {
+    border-left: 1px solid #CC3C74;
 }
 
 /* HEADER ends here */
@@ -125,12 +148,14 @@ header .logo {
 }
 
 .hero-image {
-    background-image: url('/img/milkyway2.jpg');
+    /* background-image: url('/img/milkyway2.jpg'); */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/milkyway2.jpg');
     height:80vh;
-    width:80%;
+    /* width:80%; */
+    width: 100%;
     background-size:cover;
     background-repeat:no-repeat;
-    border: 2px solid gray;
+    /* border: 2px solid gray; */
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -141,19 +166,21 @@ header .logo {
 .hero-image h1 {
     font-size: 7rem;
     margin-bottom: 3%;
+    color:#65FFC8;
 }
 
 .action-button {
     font-size: 3rem;
-    color: blue;
+    color: #65FFC8;
     padding: 2%;
-    border: 1px solid blue;
+    border: 1px solid #65FFC8;
     border-radius:15px;
 }
 
 .action-button:hover {
-    color:white;
-    background-color:blue;
+    color:#65FFC8;
+    background-color:#CC3C74;
+    border: 1px solid #CC3C74;
 }
 
 /* LANDING section ends here */
@@ -171,10 +198,15 @@ header .logo {
     width: 30%;
     margin: 15px;
     /* border: 1px solid gray; */
+    color: #FFA8A5;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.card:hover {
+    color:#65FFC8;
 }
 
 .card img {
@@ -193,7 +225,8 @@ header .logo {
 footer {
     display: flex;
     justify-content: center;
-    background-color: gray;
+    background-color: #1c1f24;
+    /* background-color: black; */
 }
 
 footer a {
