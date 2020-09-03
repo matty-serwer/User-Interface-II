@@ -223,12 +223,29 @@ header .logo {
 /* FOOTER begins here */
 
 footer {
+    background-color: #1c1f24;
+    padding-top: 2%;
+}
+
+.contact {
     display: flex;
     justify-content: center;
-    background-color: #1c1f24;
-    /* background-color: black; */
+
+    /* backgrund-color: black; */
 }
 
 footer a {
-    margin: 5%;
+    margin: 2%;
+}
+
+.social-media {
+   display: flex;
+   justify-content: center;
+    padding-bottom:2%;
+    color: #65FFC8;
+}
+
+.social-media .fab {
+    font-size: 3rem;
+    /* padding: 0 5%; */
 }
