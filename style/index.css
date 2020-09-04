@@ -187,7 +187,7 @@ header .logo {
     padding: 2%;
     border: 1px solid #65FFC8;
     border-radius:15px;
-    margin-left: 120%;
+    margin-left: 130%;
     animation: slide-left 2s;
     animation-delay: 1s;
     animation-fill-mode: forwards;
@@ -256,7 +256,6 @@ footer {
 .contact {
     display: flex;
     justify-content: center;
-
     /* backgrund-color: black; */
 }
 
