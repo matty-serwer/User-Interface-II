@@ -274,3 +274,113 @@ footer a {
     font-size: 3rem;
     /* padding: 0 5%; */
 }
+
+@media (max-width: 800px) {
+
+
+    header .navbar {
+        border: 1px solid white;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }    
+
+    header .logo {
+        color: pink;
+    }
+
+    header .logo {
+        /* font-size: 3.5rem;
+        color: #65FFC8; */
+        font-size: 5rem;
+        padding-bottom: 1vh;
+    }
+    
+    .nav {
+       
+        width: 80%
+        /* width: 40%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center; */
+    }
+    
+    
+}
+
+@media (max-width: 500px) {
+
+    header .logo {
+        color: yellow;
+        padding-bottom: 2vh;
+    }
+
+    .nav {
+        flex-flow: column wrap;
+    }
+
+    .nav a {
+        /* border: 1px solid #65FFC8;
+        border-left: 0;
+        flex-grow: 1;
+        text-align: center;
+        padding: 2%; */
+        width: 30%;
+        border-left: 1px solid #65FFC8;
+        border-top: 0;
+    }
+    
+    .nav a:hover {
+        /* background-color: #CC3C74;
+        border: 1px solid #CC3C74;
+        border-left: 0; */
+    }
+
+    .nav a:first-child {
+        /* border-left: 1px solid #65FFC8; */
+        border-top: 1px solid #65FFC8;
+    }
+    
+    .nav a:first-child:hover {
+        /* border-left: 1px solid #CC3C74; */
+        border-top: 1px solid #CC3C74;
+    }
+
+    .hero-image {
+        
+    }
+
+    .hero-image h1 {
+        /* font-size: 7rem;
+        margin-bottom: 3%;
+        color:#65FFC8;
+        animation: slide-left 2s;
+        white-space: nowrap; */
+        width:60%;
+        white-space: normal;
+        text-align: center;
+        padding-bottom: 3%;
+    }
+    
+    .action-button {
+        /* font-size: 3rem;
+        color: #65FFC8;
+        padding: 2%;
+        border: 1px solid #65FFC8;
+        border-radius:15px;
+        margin-left: 130%;
+        animation: slide-left 2s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+        white-space: nowrap; */
+    }
+    
+    .action-button:hover {
+        /* color:#65FFC8;
+        background-color:#CC3C74;
+        border: 1px solid #CC3C74; */
+    }
+
+
+}
