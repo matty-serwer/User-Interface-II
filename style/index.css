@@ -149,7 +149,7 @@ header .logo {
 
 .hero-image {
     /* background-image: url('/img/milkyway2.jpg'); */
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/milkyway2.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url('/img/pexels-miriam-espacio-110854.jpg');
     height:80vh;
     /* width:80%; */
     width: 100%;
@@ -211,6 +211,8 @@ header .logo {
     margin-bottom: 5%;
 }
 
+
+
 .card {
     width: 30%;
     margin: 15px;
@@ -220,6 +222,12 @@ header .logo {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+    
+    
 }
 
 .card:hover {
@@ -233,6 +241,7 @@ header .logo {
 .card h2 {
     margin-top: 5%;
 }
+
 
 
 /* PROJECT-GALLERY section ends here */
