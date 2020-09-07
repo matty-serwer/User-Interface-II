@@ -127,6 +127,7 @@ nav a {
 nav a:hover {
     background-color: #CC3C74;
     border: 1px solid #CC3C74;
+    border-left: 0;
     /* border-left: 0; */
 }
 
@@ -370,6 +371,7 @@ footer a {
         /* background-color: #CC3C74;
         border: 1px solid #CC3C74;
         border-left: 0; */
+        border-top: 0;
     }
 
     nav a:first-child {
