@@ -165,7 +165,7 @@ header .logo {
 
 @keyframes slide-left {
     from {
-      margin-left: 120%;
+      margin-left: 140%;
     }
   
     to {
@@ -187,7 +187,7 @@ header .logo {
     padding: 2%;
     border: 1px solid #65FFC8;
     border-radius:15px;
-    margin-left: 130%;
+    margin-left: 140%;
     animation: slide-left 2s;
     animation-delay: 1s;
     animation-fill-mode: forwards;
@@ -270,6 +270,10 @@ footer a {
     color: #65FFC8;
 }
 
+.social-media i:hover {
+    color: #CC3C74;
+}
+
 .social-media .fab {
     font-size: 3rem;
     /* padding: 0 5%; */
@@ -288,7 +292,7 @@ footer a {
     }    
 
     header .logo {
-        color: pink;
+        /* color: pink; */
     }
 
     header .logo {
@@ -339,7 +343,7 @@ footer a {
 @media (max-width: 500px) {
 
     header .logo {
-        color: yellow;
+        /* color: yellow; */
         padding-bottom: 2vh;
     }
 
