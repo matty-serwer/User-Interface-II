@@ -108,7 +108,7 @@ header .logo {
     color: #65FFC8;
 }
 
-.nav {
+nav {
     /* border: 1px solid green; */
     width: 40%;
     display: flex;
@@ -116,7 +116,7 @@ header .logo {
     align-items: center;
 }
 
-.nav a {
+nav a {
     border: 1px solid #65FFC8;
     border-left: 0;
     flex-grow: 1;
@@ -124,17 +124,17 @@ header .logo {
     padding: 2%;
 }
 
-.nav a:hover {
+nav a:hover {
     background-color: #CC3C74;
     border: 1px solid #CC3C74;
     /* border-left: 0; */
 }
 
-.nav a:first-child {
+nav a:first-child {
     border-left: 1px solid #65FFC8;
 }
 
-.nav a:first-child:hover {
+nav a:first-child:hover {
     border-left: 1px solid #CC3C74;
 }
 
@@ -302,7 +302,7 @@ footer a {
         padding-bottom: 1vh;
     }
     
-    .nav {
+    nav {
        
         width: 80%
         /* width: 40%;
@@ -349,12 +349,12 @@ footer a {
         padding-bottom: 2vh;
     }
 
-    .nav {
+    nav {
         flex-flow: column wrap;
         padding-bottom: 2vh;
     }
 
-    .nav a {
+    nav a {
         /* border: 1px solid #65FFC8;
         border-left: 0;
         flex-grow: 1;
@@ -366,18 +366,18 @@ footer a {
         font-size: 2.5rem;
     }
     
-    .nav a:hover {
+    nav a:hover {
         /* background-color: #CC3C74;
         border: 1px solid #CC3C74;
         border-left: 0; */
     }
 
-    .nav a:first-child {
+    nav a:first-child {
         /* border-left: 1px solid #65FFC8; */
         border-top: 1px solid #65FFC8;
     }
     
-    .nav a:first-child:hover {
+    nav a:first-child:hover {
         /* border-left: 1px solid #CC3C74; */
         border-top: 1px solid #CC3C74;
     }
