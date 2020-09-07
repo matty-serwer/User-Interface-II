@@ -277,9 +277,10 @@ footer a {
 
 @media (max-width: 800px) {
 
+    /* media query for header below 800px */
 
     header .navbar {
-        border: 1px solid white;
+        /* border: 1px solid white; */
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -306,6 +307,32 @@ footer a {
         align-items: center; */
     }
     
+    /* media query for gallery at 800px */
+    #project-gallery {
+        /* display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 5%; */
+    }
+    
+    
+    
+    .card {
+         width: 45%;
+        margin: 2.5%;
+        /* border: 1px solid gray; */
+        /* color: #FFA8A5;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    
+        animation: fadeInAnimation ease 3s;
+        animation-iteration-count: 1; 
+        animation-fill-mode: forwards;  */
+        
+        
+    }
     
 }
 
@@ -318,6 +345,7 @@ footer a {
 
     .nav {
         flex-flow: column wrap;
+        padding-bottom: 2vh;
     }
 
     .nav a {
@@ -348,7 +376,7 @@ footer a {
     }
 
     .hero-image {
-        
+        height:60vh;
     }
 
     .hero-image h1 {
