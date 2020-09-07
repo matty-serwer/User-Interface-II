@@ -187,7 +187,7 @@ nav a:first-child:hover {
     color: #65FFC8;
     padding: 2%;
     border: 1px solid #65FFC8;
-    border-radius:15px;
+    border-radius: 15px;
     margin-left: 140%;
     animation: slide-left 2s;
     animation-delay: 1s;
@@ -212,8 +212,6 @@ nav a:first-child:hover {
     margin-bottom: 5%;
 }
 
-
-
 .card {
     width: 30%;
     margin: 1.6%;
@@ -227,8 +225,6 @@ nav a:first-child:hover {
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1; 
     animation-fill-mode: forwards; 
-    
-    
 }
 
 .card:hover {
@@ -243,8 +239,6 @@ nav a:first-child:hover {
     margin-top: 5%;
 }
 
-
-
 /* PROJECT-GALLERY section ends here */
 
 /* FOOTER begins here */
@@ -255,8 +249,11 @@ footer {
 }
 
 .contact {
+    width: 100%;
     display: flex;
     justify-content: center;
+    margin-left: 1vh;
+
     /* backgrund-color: black; */
 }
 
@@ -289,7 +286,6 @@ footer a {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        
     }    
 
     header .logo {
@@ -304,7 +300,6 @@ footer a {
     }
     
     nav {
-       
         width: 80%
         /* width: 40%;
         display: flex;
@@ -332,13 +327,10 @@ footer a {
         text-align: center;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-    
+        justify-content: space-between; 
         animation: fadeInAnimation ease 3s;
         animation-iteration-count: 1; 
         animation-fill-mode: forwards;  */
-        
-        
     }
     
 }
@@ -411,6 +403,7 @@ footer a {
         animation-delay: 1s;
         animation-fill-mode: forwards;
         white-space: nowrap; */
+        padding: 3%;
     }
     
     .action-button:hover {
