@@ -1,1 +1,432 @@
-/* Add CSS styling here */
+/* 
+COLORS: 
+#65FFC8 Sea Foam
+#3796AD soft blue
+#7A9399 light grey
+#FFA8A5 peaches
+#CC3C74 pink
+*/
+
+/* meyers reset begins here */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* meyers reset ends here */
+
+/* general styles start here */
+
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+  border: 1px solid grey;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  font-size: 2rem;
+  background-color: #000000;
+}
+
+body a {
+  text-decoration: none;
+  color: #65ffc8;
+}
+
+section {
+  margin-bottom: 3%;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* general styles end here */
+
+/* HEADER begins here */
+
+header {
+  background: #000000;
+  margin: 2% 0;
+}
+
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vh 3%;
+}
+
+header .logo {
+  font-size: 3.5rem;
+  color: #65ffc8;
+}
+
+nav {
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav a {
+  border: 1px solid #65ffc8;
+  border-left: 0;
+  flex-grow: 1;
+  text-align: center;
+  padding: 2%;
+}
+
+nav a:hover {
+  background-color: #cc3c74;
+  border: 1px solid #cc3c74;
+  border-left: 0;
+}
+
+nav a:first-child {
+  border-left: 1px solid #65ffc8;
+}
+
+nav a:first-child:hover {
+  border-left: 1px solid #cc3c74;
+}
+
+/* HEADER ends here */
+
+/* LANDING section begins here */
+
+#landing {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)),
+    url("/img/pexels-miriam-espacio-110854.jpg");
+  height: 80vh;
+  /* width:80%; */
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10%;
+}
+
+@keyframes slide-left {
+  from {
+    margin-left: 140%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}
+
+.hero-image h1 {
+  font-size: 7rem;
+  margin-bottom: 3%;
+  color: #65ffc8;
+  animation: slide-left 2s;
+  white-space: nowrap;
+}
+
+.action-button {
+  font-size: 3rem;
+  color: #65ffc8;
+  padding: 2%;
+  border: 1px solid #65ffc8;
+  border-radius: 15px;
+  margin-left: 140%;
+  animation: slide-left 2s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  white-space: nowrap;
+}
+
+.action-button:hover {
+  color: #65ffc8;
+  background-color: #cc3c74;
+  border: 1px solid #cc3c74;
+}
+
+/* LANDING section ends here */
+
+/* PROJECT-GALLERY section begins here */
+
+#project-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 5%;
+}
+
+.card {
+  width: 30%;
+  margin: 1.6%;
+  color: #ffa8a5;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.card:hover {
+  color: #65ffc8;
+}
+
+.card img {
+  display: flex;
+}
+
+.card h2 {
+  margin-top: 5%;
+}
+
+/* PROJECT-GALLERY section ends here */
+
+/* FOOTER begins here */
+
+footer {
+  background-color: #1c1f24;
+  padding-top: 2%;
+}
+
+.contact {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-left: 1vh;
+}
+
+footer a {
+  margin: 2%;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2%;
+  color: #65ffc8;
+}
+
+.social-media i:hover {
+  color: #cc3c74;
+}
+
+.social-media .fab {
+  font-size: 3rem;
+}
+
+@media (max-width: 800px) {
+
+  /* media query for header below 800px */
+
+  header .navbar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header .logo {
+    font-size: 5rem;
+    padding-bottom: 1vh;
+  }
+
+  nav {
+    width: 80%;
+  }
+
+  .hero-image {
+    height: 80vh;
+  }
+
+  /* media query for gallery at 800px */
+
+  .card {
+    width: 45%;
+    margin: 2.5%;
+  }
+}
+
+@media (max-width: 500px) {
+
+  /* media query for header at 500px */
+
+  header .logo {
+    padding-bottom: 2vh;
+  }
+
+  nav {
+    flex-flow: column wrap;
+    padding-bottom: 2vh;
+  }
+
+  nav a {
+    width: 35%;
+    border-left: 1px solid #65ffc8;
+    border-top: 0;
+    font-size: 2.5rem;
+  }
+
+  nav a:hover {
+    border-top: 0;
+  }
+
+  nav a:first-child {
+    border-top: 1px solid #65ffc8;
+  }
+
+  nav a:first-child:hover {
+    border-top: 1px solid #cc3c74;
+  }
+
+  /* media query for landing at 500px */
+
+  .hero-image {
+    height: 70vh;
+  }
+
+  .hero-image h1 {
+    width: 60%;
+    white-space: normal;
+    text-align: center;
+    padding-bottom: 3%;
+  }
+
+  .action-button {
+    padding: 3%;
+  }
+}
